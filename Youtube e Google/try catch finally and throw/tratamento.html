@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de exceções - JS</title>
+</head>
+<body>
+
+    <p>Informe um número entre 10 e 20:</p>
+    <input type="text" id="num">
+    <button onclick="verifica()">Verificar</button>
+    <p id="msg"></p>
+    <script>
+
+        let verifica = () => {
+            let x = document.getElementById('num').value;
+            try{
+                //if(x == '') throw 'Informe um valor';
+                if(isNaN(x)) throw 'Você precisa informar um número...';
+                
+                x = Number(x) 
+                //if(x < 10) throw 'Informe um número com valor maior que 10...';
+                //if(x > 20) throw 'Informe um número com valor menor que 20...';
+                if(x < 10 || x > 20) throw 'Informe um número com valor entre 10 e 20...';
+
+                document.getElementById('msg').innerHTML = `Perfeito! Você digitou o valor:  ${x} <br> E este valor está correto!`;            
+            } catch(erro) {
+                document.getElementById('msg').innerHTML = `Erro: ${erro}`;
+            } finally {
+                document.getElementById('num').value = '';
+            }
+        }
+        /*let x = 5;
+        try{
+                if(x == 10) throw 'O valor de X precisa ser maior que 10';
+                alert('Test');            
+            } catch(erro) {
+                alert(`Erro: ${erro}`);
+            }
+        }*/
+
+    </script>
+
+</body>
+</html>
