@@ -5,5 +5,7 @@ const subtract = (a, b) => a - b
 // these are kinda pointless I know, but it's just to simulate an async function
 const sumAsync = (...args) => Promise.resolve(sum(...args))
 const subtractAsync = (...args) => Promise.resolve(subtract(...args))
-
+//modo antigo:
 module.exports = {sum, subtract, sumAsync, subtractAsync}
+//modo novo:
+//export default {sum, subtract, sumAsync, subtractAsync}
