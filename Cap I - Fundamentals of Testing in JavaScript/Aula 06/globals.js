@@ -1,4 +1,4 @@
-import {sum, subtract, sumAsync, subtractAsync } from './math';
+const {sum, subtract, sumAsync, subtractAsync } = require('./math');
 
 test('sumAsync adds numbers asynchronously', async () => {
     const result = await sumAsync(3, 7)
