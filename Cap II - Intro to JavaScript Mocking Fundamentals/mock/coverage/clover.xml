@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1644945685102" clover="3.2.0">
+  <project timestamp="1644945685102" name="All files">
+    <metrics statements="15" coveredstatements="11" conditionals="12" coveredconditionals="4" methods="2" coveredmethods="1" elements="29" coveredelements="16" complexity="0" loc="15" ncloc="15" packages="1" files="2" classes="2"/>
+    <file name="thumb-war.js" path="C:\Users\LeoVV\Documents\estudos\JavaScript\Testing js\testando javascript\Cap II - Intro to JavaScript Mocking Fundamentals\mock\src\thumb-war.js">
+      <metrics statements="12" coveredstatements="10" conditionals="8" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="1" count="4" type="stmt"/>
+      <line num="4" count="4" type="stmt"/>
+      <line num="5" count="4" type="stmt"/>
+      <line num="6" count="4" type="stmt"/>
+      <line num="7" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="8" count="8" type="stmt"/>
+      <line num="9" count="8" type="cond" truecount="1" falsecount="1"/>
+      <line num="10" count="8" type="stmt"/>
+      <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="15" count="4" type="cond" truecount="1" falsecount="1"/>
+      <line num="18" count="4" type="stmt"/>
+    </file>
+    <file name="utils.js" path="C:\Users\LeoVV\Documents\estudos\JavaScript\Testing js\testando javascript\Cap II - Intro to JavaScript Mocking Fundamentals\mock\src\utils.js">
+      <metrics statements="3" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="8" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="15" count="2" type="stmt"/>
+    </file>
+  </project>
+</coverage>
