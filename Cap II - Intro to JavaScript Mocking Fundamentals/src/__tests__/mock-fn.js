@@ -6,8 +6,11 @@ test('returns winner', () => {
   utils.getWinner = jest.fn((p1, p2) => p1)
 
   const winner = thumbWar('Leonardo Braga', 'Big Vegildo')
-  expect(winner).toBe('Leonardo Braga')
-  console.log(utils.getWinner.mock)
+  expect(winner).toBe('Leonardo Braga')  
+  expect(utils.getWinner.mock.calls).toEqual([
+    [ 'Leonardo Braga', 'Big Vegildo' ],
+    [ 'Leonardo Braga', 'Big Vegildo' ]
+  ])
   expect(utils.getWinner).toHaveBeenCalledTimes(2)
   expect(utils.getWinner).toHaveBeenCalledWith('Leonardo Braga', 'Big Vegildo')
 
