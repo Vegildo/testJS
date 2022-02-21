@@ -1,14 +1,14 @@
 const thumbWar = require('../thumb-war')
-const utilsMock = require('../utils')
+const utils = require('../utils')
 
 jest.mock('../utils')
 
 test('returns winner', () => {
-  const winner = thumbWar('Kent C. Dodds', 'Ken Wheeler')
-  expect(winner).toBe('Kent C. Dodds')
+  const winner = thumbWar('Gabriel Braga', 'Ramon Braga')
+  expect(winner).toBe('Gabriel Braga')
   expect(utilsMock.getWinner.mock.calls).toEqual([
-    ['Kent C. Dodds', 'Ken Wheeler'],
-    ['Kent C. Dodds', 'Ken Wheeler']
+    ['Gabriel Braga', 'Ramon Braga'],
+    ['Gabriel Braga', 'Ramon Braga']
   ])
 
   // cleanup
