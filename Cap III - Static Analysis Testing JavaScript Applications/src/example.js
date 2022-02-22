@@ -1,4 +1,5 @@
-//'use strict'
+// eslint-disable-next-line strict
+'use strict'
 
 const username = 'freddy'
 typeof username === 'string'
