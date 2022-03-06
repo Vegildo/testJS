@@ -1,9 +1,5 @@
 {
     "hooks": {
-<<<<<<< HEAD
-        "pre-commit": "npm run validadte"
-=======
         "pre-commit": "npm run validate"
->>>>>>> eec5562af18588898cb19f77f5e78716d8e68131
     }
 }
